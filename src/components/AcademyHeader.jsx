@@ -5,6 +5,7 @@ import {AiOutlineMenu, AiOutlineClose} from 'react-icons/ai';
 import {FaCaretDown} from 'react-icons/fa';
 import {FaCaretRight} from 'react-icons/fa6';
 import '../styles/AcademyHeader.css';
+import logo from '../images/logo.jpg';
 
 const AcademyHeader = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -17,7 +18,7 @@ const AcademyHeader = () => {
   return (
     <header className={`academy-header ${isMenuOpen ? 'menu-open' : ''}`}>
       <div className="academy-logo">
-        <img src="../images/logo.jpg" alt="Eva Aviation Academy Logo" />
+        <img src={logo} alt="Eva Aviation Academy Logo" />
         <h1>Eva Aviation Academy</h1>
       </div>
       <nav className={`academy-nav-links ${isMenuOpen ? 'open' : ''}`}>

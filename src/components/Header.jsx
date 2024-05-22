@@ -4,6 +4,7 @@ import {useNavigate} from 'react-router-dom';
 import {AiOutlineMenu, AiOutlineClose} from 'react-icons/ai';
 
 import '../styles/Header.css';
+import logo from '../images/logo.jpg';
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -16,7 +17,7 @@ const Header = () => {
   return (
     <header className={`mainhome-header ${isMenuOpen ? 'menu-open' : ''}`}>
       <div className="mainhome-logo">
-        <img src="./images/logo.jpg" alt="Eva Aviation Academy Logo" />
+        <img src={logo} alt="Eva Aviation Academy Logo" />
         <h1>Eva Aviation Academy</h1>
       </div>
       <nav className={`mainhome-nav-links ${isMenuOpen ? 'open' : ''}`}>

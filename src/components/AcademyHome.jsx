@@ -1,6 +1,7 @@
 // AcademyHome.jsx
 
 import React from 'react';
+import broucher from '../images/Eva-Aviation.jpg';
 
 const AcademyHome = () => {
   return (
@@ -8,7 +9,7 @@ const AcademyHome = () => {
       <header>
         <h1>Welcome to Eva Aviation Academy</h1>
         <p>Your pathway to the skies!</p>
-        <img src="../images/Eva-Aviation.jpg" alt="" />
+        <img src={broucher} alt="" />
       </header>
       <main>
         <section className="about">

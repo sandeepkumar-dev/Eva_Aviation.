@@ -4,6 +4,7 @@ import {useNavigate} from 'react-router-dom';
 import {AiOutlineMenu, AiOutlineClose} from 'react-icons/ai';
 import {FaCaretDown} from 'react-icons/fa';
 import '../styles/AcademyHeader.css';
+import logo2 from '../images/logo2.jpg';
 
 const ImportExportHeader = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -16,7 +17,7 @@ const ImportExportHeader = () => {
   return (
     <header className={`academy-header ${isMenuOpen ? 'menu-open' : ''}`}>
       <div className="ie-academy-logo2">
-        <img src="../images/logo2.jpg" alt=" Logo2" />
+        <img src={logo2} alt=" Logo2" />
         <h1>Eva Aviation Import & Export</h1>
       </div>
       <nav className={`academy-nav-links ${isMenuOpen ? 'open' : ''}`}>
