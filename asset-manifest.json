@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/Eva_Aviation./static/css/main.49fd0d41.css",
+    "main.css": "/Eva_Aviation./static/css/main.9d58627c.css",
     "main.js": "/Eva_Aviation./static/js/main.cb690db0.js",
     "static/js/510.b6d97d98.chunk.js": "/Eva_Aviation./static/js/510.b6d97d98.chunk.js",
     "images/img-17.jpg": "/Eva_Aviation./images/img-17.jpg",
@@ -37,12 +37,12 @@
     "images/img-06.jpg": "/Eva_Aviation./images/img-06.jpg",
     "images/logo2.jpg": "/Eva_Aviation./images/logo2.jpg",
     "index.html": "/Eva_Aviation./index.html",
-    "main.49fd0d41.css.map": "/Eva_Aviation./static/css/main.49fd0d41.css.map",
+    "main.9d58627c.css.map": "/Eva_Aviation./static/css/main.9d58627c.css.map",
     "main.cb690db0.js.map": "/Eva_Aviation./static/js/main.cb690db0.js.map",
     "510.b6d97d98.chunk.js.map": "/Eva_Aviation./static/js/510.b6d97d98.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.49fd0d41.css",
+    "static/css/main.9d58627c.css",
     "static/js/main.cb690db0.js"
   ]
 }
