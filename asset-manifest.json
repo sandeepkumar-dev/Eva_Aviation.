@@ -1,11 +1,10 @@
 {
   "files": {
-    "main.css": "/Eva_Aviation./static/css/main.1065b2c6.css",
-    "main.js": "/Eva_Aviation./static/js/main.fc13d210.js",
+    "main.css": "/Eva_Aviation./static/css/main.251d9bac.css",
+    "main.js": "/Eva_Aviation./static/js/main.49cfb54c.js",
     "static/js/510.b6d97d98.chunk.js": "/Eva_Aviation./static/js/510.b6d97d98.chunk.js",
     "images/img-17.jpg": "/Eva_Aviation./images/img-17.jpg",
     "images/img-22.jpg": "/Eva_Aviation./images/img-22.jpg",
-    "images/Eva-Aviation.jpg": "/Eva_Aviation./images/Eva-Aviation.jpg",
     "images/img-14.jpg": "/Eva_Aviation./images/img-14.jpg",
     "images/img-20.jpg": "/Eva_Aviation./images/img-20.jpg",
     "images/img-26.jpg": "/Eva_Aviation./images/img-26.jpg",
@@ -37,12 +36,12 @@
     "images/img-06.jpg": "/Eva_Aviation./images/img-06.jpg",
     "images/logo2.jpg": "/Eva_Aviation./images/logo2.jpg",
     "index.html": "/Eva_Aviation./index.html",
-    "main.1065b2c6.css.map": "/Eva_Aviation./static/css/main.1065b2c6.css.map",
-    "main.fc13d210.js.map": "/Eva_Aviation./static/js/main.fc13d210.js.map",
+    "main.251d9bac.css.map": "/Eva_Aviation./static/css/main.251d9bac.css.map",
+    "main.49cfb54c.js.map": "/Eva_Aviation./static/js/main.49cfb54c.js.map",
     "510.b6d97d98.chunk.js.map": "/Eva_Aviation./static/js/510.b6d97d98.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.1065b2c6.css",
-    "static/js/main.fc13d210.js"
+    "static/css/main.251d9bac.css",
+    "static/js/main.49cfb54c.js"
   ]
 }
