@@ -57,11 +57,10 @@ const Course = () => {
         </p>
         <h3>Course Overview</h3>
         <ul>
-          <li>Duration of Full Course- 12 months</li>
-          <li>
-            Duration of Ground School- 3-6 months Duration of Flying - 6-10
-            months
-          </li>
+          <li>Duration of Full Course- 12-18 months</li>
+          <li>Duration of Ground School- 3-6 months </li>
+          <li> Duration of Flying - 6-12 months</li>
+
           <li>
             Get Scholarship Upto 50% on CPL Ground Classes based on your 12th
             Class Physics, Maths and English Marks.
@@ -87,7 +86,7 @@ const Course = () => {
         </p>
         <h3>Course Overview</h3>
         <ul>
-          <li>Duration: 18-24 months</li>
+          <li>Duration: 6-12 months</li>
           <li>
             Curriculum: Advanced aircraft systems, airline operations, crew
             resource management (CRM), airline transport regulations, etc.

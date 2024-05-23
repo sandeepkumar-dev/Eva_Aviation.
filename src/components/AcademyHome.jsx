@@ -40,8 +40,9 @@ const AcademyHome = () => {
             <li>Private Pilot Licence (PPL)</li>
             <li>Commercial Pilot Licence (CPL)</li>
             <li>Airlines Transport Pilot Licence (ATPL)</li>
-            <li>Post Type Rating B737/A320/ATR 72-600</li>
-            <li>Type Rating B737/A320/ATR 72-600</li>
+            <li>PreType Rating B737/A320/ATR72-600</li>
+            <li>Post Type Rating B737/A320/ATR72-600</li>
+            <li>Type Rating B737/A320/ATR72-600</li>
           </ul>
         </section>
         <section className="contact">
