@@ -1,16 +1,110 @@
 // AcademyHome.jsx
 
 import React from 'react';
-import broucher from '../images/Eva-Aviation.jpg';
+import {useState, useEffect} from 'react';
+// import broucher from '../images/Eva-Aviation.jpg';
 
 const AcademyHome = () => {
+  const [showPopup, setShowPopup] = useState(false);
+  const [formData, setFormData] = useState({
+    name: '',
+    mobile: '',
+    email: '',
+    message: '',
+  });
+
+  useEffect(() => {
+    // Show the popup when the component mounts (page reload)
+    setShowPopup(true);
+  }, []);
+
+  const handleClose = () => {
+    setShowPopup(false);
+  };
+
+  const handleChange = (e) => {
+    const {name, value} = e.target;
+    setFormData({...formData, [name]: value});
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+
+    // Construct the mailto URL
+    const mailtoLink = `mailto:evaaviationacademy@gmail.com?subject=Enquiry Form Submission&body=${encodeURIComponent(
+      `Name: ${formData.name} \nMobile: ${formData.mobile}\nEmail: ${formData.email}\nMessage: ${formData.message}`
+    )}`;
+
+    // Open the mailto link
+    window.location.href = mailtoLink;
+
+    handleClose();
+  };
+
   return (
     <div className="container">
       <header>
         <h1>Welcome to Eva Aviation Academy</h1>
         <p>Your pathway to the skies!</p>
-        <img src={broucher} alt="" />
+        {/* <img src={broucher} alt="" /> */}
       </header>
+      {/*  */}
+
+      <div className="App">
+        {showPopup && (
+          <div id="popup" className="popup">
+            <div className="popup-content">
+              <h2>Enquiry Form</h2>
+              <form onSubmit={handleSubmit}>
+                <div>
+                  <label>Name:</label>
+                  <input
+                    type="text"
+                    name="name"
+                    value={formData.name}
+                    onChange={handleChange}
+                    required
+                  />
+                </div>
+                <label>Mobile :</label>
+                <input
+                  type="text"
+                  name="mobile"
+                  value={formData.mobile}
+                  onChange={handleChange}
+                  required
+                />
+
+                <div>
+                  <label>Email:</label>
+                  <input
+                    type="email"
+                    name="email"
+                    value={formData.email}
+                    onChange={handleChange}
+                    required
+                  />
+                </div>
+                <div>
+                  <label>Message:</label>
+                  <textarea
+                    name="message"
+                    value={formData.message}
+                    onChange={handleChange}
+                    required
+                  />
+                </div>
+                <button type="submit">Submit</button>
+                <button type="button" onClick={handleClose}>
+                  Close
+                </button>
+              </form>
+            </div>
+          </div>
+        )}
+      </div>
+
+      {/*  */}
       <main>
         <section className="about">
           <h2>About Us</h2>
@@ -33,6 +127,47 @@ const AcademyHome = () => {
             innovation. Join us on your journey to soaring new heights in
             aviation!
           </p>
+        </section>
+        <section className="qualifiction">
+          <h2>Become a Pilot</h2>
+          <strong>Qualification: </strong>
+          <ul>
+            <li>
+              10+2 with Physics & Mathematics (CBSE/ICSE/STATE BOARD/*NIOS)
+            </li>
+            <li>10th, 10+2 Marksheets & Certificates Verifications </li>
+            <li>
+              <strong>Medical: </strong> Class ll & Class l
+            </li>
+            <li>
+              <strong>Police Verification: </strong>Passport Issued Within 6
+              Months Police Verication Not Required
+            </li>
+            <li>DGCA Computer Number</li>
+            <li>
+              <strong>Age: </strong>18 + Years
+            </li>
+          </ul>
+          <strong>Ground Class Subjects:</strong>
+          <ul>
+            <li>Aviation Metrology</li>
+            <li>Air Regulation</li>
+            <li>Air Navigation</li>
+            <li>Technical General</li>
+            <li>RTR (A)</li>
+            <li>
+              Aircraft Specification (Single Engine, Multi Engine Aircraft)
+            </li>
+          </ul>
+          <strong>200hrs Flying:</strong>
+          <ul>
+            <li>Single Engine</li>
+            <li>Single Engine & Mutli Engine</li>
+          </ul>
+          <strong>Course Duration:</strong>
+          <ul>
+            <li>18 Months to 2 Years</li>
+          </ul>
         </section>
         <section className="courses">
           <h2>Our Courses</h2>

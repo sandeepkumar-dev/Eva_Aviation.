@@ -44,13 +44,6 @@ const About = () => {
           </li>
         </ol>
 
-        <h3>Our Programs</h3>
-        <ul>
-          <li>Private Pilot License (PPL)</li>
-          <li>Commercial Pilot License (CPL)</li>
-          <li>Airline Transport Pilot License (ATPL)</li>
-        </ul>
-
         <h3>Join Us in the Skies</h3>
         <p>
           Embark on an exciting journey with Eva Aviation Academy and turn your
