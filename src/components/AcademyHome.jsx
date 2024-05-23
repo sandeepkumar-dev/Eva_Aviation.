@@ -41,6 +41,43 @@ const AcademyHome = () => {
     handleClose();
   };
 
+  // For registerd form
+  const [registerFormData, setRegisterFormData] = useState({
+    fullName: '',
+    emailAddress: '',
+    phoneNumber: '',
+    selectedCourse: '',
+    twelfthMarks: '',
+  });
+
+  const handleChanges = (e) => {
+    const {name, value} = e.target;
+    setRegisterFormData({...registerFormData, [name]: value});
+  };
+
+  const handleSubmits = (e) => {
+    e.preventDefault();
+
+    // Map form data to different parameter names for email body
+    const mappedData = {
+      'Full Name': registerFormData.fullName,
+      'Email Address': registerFormData.emailAddress,
+      'Phone Number': registerFormData.phoneNumber,
+      'Selected Course': registerFormData.selectedCourse,
+      '12th Marks Scored': registerFormData.twelfthMarks,
+    };
+
+    // Construct the mailto URL
+    const mailtoLink = `mailto:evaaviationacademy@gmail.com?subject=Register Now Form Submission&body=${encodeURIComponent(
+      Object.entries(mappedData)
+        .map(([key, value]) => `${key}: ${value}`)
+        .join('\n')
+    )}`;
+
+    // Open the mailto link
+    window.location.href = mailtoLink;
+  };
+
   return (
     <div className="container">
       <header>
@@ -180,13 +217,79 @@ const AcademyHome = () => {
             <li>Type Rating B737/A320/ATR72-600</li>
           </ul>
         </section>
-        <section className="contact">
-          <h2>Contact Us</h2>
-          <p>Email: evaaviationacademy@gmail.com</p>
-          <p>Mobile no: +91 7982316437</p>
-          <p>Phone: 011-35886195</p>
-        </section>
       </main>
+      <div className="Apps">
+        <h1>Register Now</h1>
+        <form onSubmit={handleSubmits} className="register-form">
+          <div>
+            <label htmlFor="fullName"></label>
+            <input
+              type="text"
+              id="fullName"
+              name="fullName"
+              placeholder="Enter your full name"
+              value={registerFormData.fullName}
+              onChange={handleChanges}
+              required
+            />
+          </div>
+          <div>
+            <label htmlFor="emailAddress"></label>
+            <input
+              type="email"
+              id="emailAddress"
+              name="emailAddress"
+              placeholder="Enter your email address"
+              value={registerFormData.emailAddress}
+              onChange={handleChanges}
+              required
+            />
+          </div>
+          <div>
+            <label htmlFor="phoneNumber"></label>
+            <input
+              type="tel"
+              id="phoneNumber"
+              name="phoneNumber"
+              placeholder="Enter your phone number"
+              value={registerFormData.phoneNumber}
+              onChange={handleChanges}
+              required
+            />
+          </div>
+          <div>
+            <label htmlFor="selectedCourse"></label>
+            <select
+              id="selectedCourse"
+              name="selectedCourse"
+              value={registerFormData.selectedCourse}
+              onChange={handleChanges}
+              required
+            >
+              <option value="" disabled>
+                Select a course
+              </option>
+              <option value="Course 1">Private Pilot Licence</option>
+              <option value="Course 2">Commercial Pilot Licence</option>
+              <option value="Course 3">Airlines Transport Pilot Licence</option>
+              <option value="Course 4">Type Rating</option>
+            </select>
+          </div>
+          <div>
+            <label htmlFor="twelfthMarks"></label>
+            <input
+              type="number"
+              id="twelfthMarks"
+              name="twelfthMarks"
+              placeholder="Enter your 12th marks in %"
+              value={registerFormData.twelfthMarks}
+              onChange={handleChanges}
+              required
+            />
+          </div>
+          <button type="submit">Submit</button>
+        </form>
+      </div>
     </div>
   );
 };
