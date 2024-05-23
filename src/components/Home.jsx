@@ -42,7 +42,7 @@ const Home = () => {
   return (
     <div className="body-section">
       {/* <h1>Welcome to my Website</h1> */}
-      <p>Click On Image</p>
+
       <div className="main-container">
         <div className="container-part">
           <div className="photo-container">
@@ -67,17 +67,15 @@ const Home = () => {
               </a>
             ))}
             <div className="photo-name">
-              <button type="button">
-                <h2>
-                  <a
-                    onClick={() => {
-                      navigate('/academyhome');
-                    }}
-                  >
-                    Eva Aviation Academy
-                  </a>
-                </h2>
-              </button>
+              <h2>
+                <a
+                  onClick={() => {
+                    navigate('/academyhome');
+                  }}
+                >
+                  Eva Aviation Academy
+                </a>
+              </h2>
             </div>
           </div>
         </div>

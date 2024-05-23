@@ -1,7 +1,7 @@
 /* Contact.css */
 
 .contact-container {
-  max-width: 900px;
+  max-width: 100%;
   margin: 100px auto;
   padding: 20px;
   background-color: #fff;
@@ -10,7 +10,12 @@
   background-image: linear-gradient(rgb(231, 212, 235), rgb(152, 211, 23));
 }
 
+.contact-container h1 {
+  text-align: center;
+  margin-bottom: 50px;
+}
 .company-container {
+  margin-left: 50px;
   margin-bottom: 30px;
 }
 

@@ -7,10 +7,12 @@
 .our-products h1 {
   text-align: center;
   color: white;
+  padding-top: 20px;
 }
 .our-products p {
   text-align: center;
   color: white;
+  margin-bottom: 40px;
 }
 .product-container {
   display: flex;
