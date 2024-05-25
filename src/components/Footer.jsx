@@ -69,7 +69,9 @@ const Footer = () => {
             &copy; Copyright 2020-{currentYear} Eva Aviation Academy.All rights
             reserved.
           </p>
-          <p>Developed & managed by Sandeep Kumar</p>
+          <p>
+            <a href="">Developed by Developinger.com</a>
+          </p>
         </div>
       </footer>
     </div>
