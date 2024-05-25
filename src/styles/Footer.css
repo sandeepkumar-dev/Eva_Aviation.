@@ -107,6 +107,11 @@
   color: white;
   text-decoration: none;
 }
+.copyright p a {
+  text-decoration: none;
+  color: white;
+  cursor: pointer;
+}
 
 /* Responsive styles */
 @media screen and (max-width: 768px) {

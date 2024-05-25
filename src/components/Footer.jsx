@@ -70,7 +70,9 @@ const Footer = () => {
             reserved.
           </p>
           <p>
-            <a href="">Developed by Developinger.com</a>
+            <a className="devloper" href="">
+              Developed by Developinger.com
+            </a>
           </p>
         </div>
       </footer>
